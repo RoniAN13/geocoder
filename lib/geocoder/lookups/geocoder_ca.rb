@@ -47,7 +47,8 @@ module Geocoder::Lookup
     end
 
     def parse_raw_data(raw_data)
-      super raw_data[/^test\((.*)\)\;\s*$/, 1]
+      encoded_data = raw_data.encode('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '?')
+      super encoded_data[/^test\((.*)\)\;\s*$/, 1]
     end
   end
 end
