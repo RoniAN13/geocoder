@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
     'source_code_uri' => 'https://github.com/alexreisner/geocoder',
     'changelog_uri'   => 'https://github.com/alexreisner/geocoder/blob/master/CHANGELOG.md'
   }
-  s.add_dependency("csv", ">= 3.0.0") # for :maxmind lookup
+  # s.add_dependency("csv", ">= 3.0.0") # for :maxmind lookup
 end
